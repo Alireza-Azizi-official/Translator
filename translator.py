@@ -1,4 +1,3 @@
-import sys
 import fitz
 from deep_translator import GoogleTranslator
 
