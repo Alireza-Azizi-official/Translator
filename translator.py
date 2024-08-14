@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz  
 from deep_translator import GoogleTranslator
 
 def extract_text_from_pdf(pdf_path):
@@ -9,7 +9,7 @@ def extract_text_from_pdf(pdf_path):
         text += page.get_text()
     return text
 
-def translate(text, language, chunk_size=4000):  # Reduce chunk size slightly to be safe
+def translate(text, language, chunk_size=4000):  
     translator = GoogleTranslator(source='auto', target=language)
     translated_text = ''
     start = 0
